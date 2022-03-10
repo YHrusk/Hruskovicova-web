@@ -5,6 +5,7 @@ import Article from '@/components/Article.vue';
 export default {
   components: {Article},
 
+/*
   data() {
     return {
       count: 1
@@ -18,6 +19,7 @@ export default {
     this.count++;
     }
   }
+ */
 }
 
 </script>
@@ -25,7 +27,7 @@ export default {
 <template>
   <main>
 <!--    <TheWelcome />-->
-    <button type="button" @click="onClick()">Count: {{count}}</button>
-    <Article/>
-  </main>
-</template>
+    <!-- <button type="button" @click="onClick()">Count: {{count}}</button> -->
+     <Article/>
+   </main>
+ </template>
