@@ -9,7 +9,7 @@
           <h4 class="card-title">{{ title }}</h4>
           <h6 class="card-subtitle">{{ formattedDate }}</h6>
           <p class="card-text text-truncate">{{text}}</p>
-          <router-link to="/article" class="btn btn-outline-dark btn-light">
+          <router-link :to="`/article/${id}`" class="btn btn-outline-dark btn-light">
             Číst článek
           </router-link>
         </div>

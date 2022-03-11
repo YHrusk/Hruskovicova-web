@@ -8,7 +8,7 @@ import Header from "@/components/Header.vue";
 <template>
   <Navigation/>
   <Header/>
-  <div class="container-fluid bg-dark bg-gradient bg-opacity-10">
+  <div class="container-fluid bg-warning bg-gradient bg-opacity-10">
     <RouterView/>
   </div>
 </template>

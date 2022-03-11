@@ -1,4 +1,5 @@
 <template>
+  <div class="pt-5">
   <header class="cs-header">
     <div class="container">
       <div class="row">
@@ -9,6 +10,7 @@
       </div>
     </div>
   </header>
+  </div>
 </template>
 
 <script>

@@ -9,6 +9,7 @@ export default {
     return {
       articles: [
         {
+          id: 1,
           image: 'https://picsum.photos/id/12/200',
           title: "Článek",
           date: new Date("2019-02-12"),
@@ -20,6 +21,7 @@ export default {
 `
         },
         {
+          id: 2,
           image: 'https://picsum.photos/id/1/200',
           title: "Něco",
           date: new Date("2020-08-01"),
@@ -30,15 +32,17 @@ export default {
 `
         },
         {
+          id: 3,
           image: 'https://picsum.photos/id/15/200',
           title: "Název článku",
           date: new Date("2001-03-02"),
           text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam egestas wisi a erat.
-Integer tempor. Pellentesque ipsum. Integer malesuada. Vestibulum fermentum tortor id mi. Aenean placerat.
-Pellentesque arcu. Phasellus rhoncus.
+          Integer tempor. Pellentesque ipsum. Integer malesuada. Vestibulum fermentum tortor id mi. Aenean placerat.
+          Pellentesque arcu. Phasellus rhoncus.
 `
         },
         {
+          id: 4,
           image: 'https://picsum.photos/id/10/200',
           title: "Artikl",
           date: new Date("1999-05-04"),
@@ -50,6 +54,7 @@ Pellentesque arcu. Phasellus rhoncus.
 `
         },
         {
+          id: 5,
           image: 'https://picsum.photos/id/8/200',
           title: "Xgsjiasnv",
           date: new Date("2021-10-06"),
@@ -72,7 +77,7 @@ Pellentesque arcu. Phasellus rhoncus.
 <template>
   <div class="row">
     <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2  pb-3 pt-3" v-for="article in articles">
-      <Preview :title="article.title" :date="article.date" :text="article.text" :image="article.image"></Preview>
+      <Preview :id="article.id" :title="article.title" :date="article.date" :text="article.text" :image="article.image"></Preview>
     </div>
   </div>
 </template>

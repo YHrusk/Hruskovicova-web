@@ -1,5 +1,6 @@
 <template>
 
+<div class="container">
   <div class="row">
     <div class="col-md-6 offset-md-3 p-5 bg-white">
       <h3>{{ article.title }}</h3>
@@ -10,49 +11,7 @@
       <a href="#" class="card-link">Another link</a>
     </div>
   </div>
-
-<!--  <div class="card" style="width: 18rem;">-->
-<!--    <div class="card-body">-->
-<!--    <h3 class="card-title">Článeček o ničem</h3>-->
-<!--    <span>-->
-<!--      <img class="card-img-top" src="https://picsum.photos/200/300">-->
-<!--    </span>-->
-<!--    <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin mattis lacinia justo. Fusce dui leo, imperdiet in, aliquam-->
-<!--      sit amet, feugiat eu, orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.-->
-<!--      Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Etiam egestas wisi a erat. Curabitur vitae diam non enim vestibulum interdum.-->
-<!--    </p>-->
-<!--      <a href="#" class="card-link">Card link</a>-->
-<!--      <a href="#" class="card-link">Another link</a>-->
-<!--    </div>-->
-<!--  </div>-->
-
-<!--  <div class="card" style="width: 18rem;">-->
-<!--    <div class="card-body">-->
-<!--    <h3 class="card-title">Nadpis pro něco</h3>-->
-<!--    <span>-->
-<!--      <img class="card-img-top" src="https://picsum.photos/200/300?grayscale">-->
-<!--    </span>-->
-<!--    <p class="card-text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui.-->
-<!--      Fusce wisi. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo.-->
-<!--    </p>-->
-<!--      <a href="#" class="card-link">Card link</a>-->
-<!--      <a href="#" class="card-link">Another link</a>-->
-<!--    </div>-->
-<!--  </div>-->
-
-<!--  <div class="card" style="width: 18rem;">-->
-<!--    <div class="card-body">-->
-<!--    <h3 class="card-title">Prostě artikl</h3>-->
-<!--    <span>-->
-<!--      <img class="card-img-top" src="https://picsum.photos/200/300/?blur=2">-->
-<!--    </span>-->
-<!--    <p class="card-text">Nullam sapien sem, ornare ac, nonummy non, lobortis a enim. In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Quisque tincidunt scelerisque libero.-->
-<!--      Proin mattis lacinia justo. Donec iaculis gravida nulla. Duis risus. Nullam faucibus mi quis velit-->
-<!--    </p>-->
-<!--      <a href="#" class="card-link">Card link</a>-->
-<!--      <a href="#" class="card-link">Another link</a>-->
-<!--    </div>-->
-<!--  </div>-->
+</div>
 
 </template>
 
@@ -62,6 +21,7 @@ export default {
   data() {
     return {
       article: {
+        id: null,
         title: null,
         date: null,
         text: null,
@@ -80,6 +40,7 @@ export default {
   methods: {
     async getData() {
       return {
+        id: id,
         image: 'https://picsum.photos/200/300',
         title: 'Článek o 💩',
         date: new Date(),
