@@ -22,6 +22,7 @@
 export default {
   name: "Preview",
   props: {
+    id: Number,
     title: String,
     date: Date,
     text: String,
