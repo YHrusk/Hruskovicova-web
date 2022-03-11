@@ -9,9 +9,8 @@
           <h4 class="card-title">{{ title }}</h4>
           <h6 class="card-subtitle">{{ formattedDate }}</h6>
           <p class="card-text text-truncate">{{text}}</p>
-          <router-link to="/article" class="btn btn-primary">
-            Číst dále
-            <em class="bi-play"/>
+          <router-link to="/article" class="btn btn-outline-dark btn-light">
+            Číst článek
           </router-link>
         </div>
       </div>

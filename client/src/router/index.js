@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import PageNotFound from '../views/PageNotFound.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,11 +13,13 @@ const router = createRouter({
     {
       path: '/article',
       name: 'article',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../components/Article.vue')
-    }
+    },
+    {
+      path: '/:catchAll(.*)*',
+      name: "PageNotFound",
+      component: PageNotFound,
+    },
   ]
 })
 

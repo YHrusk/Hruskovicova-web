@@ -1,10 +1,10 @@
 <template>
 
   <div class="row">
-    <div class="col-md-6 offset-md-3 p-5 bg-light">
+    <div class="col-md-6 offset-md-3 p-5 bg-white">
       <h3>{{ article.title }}</h3>
       <h6>{{ formattedDate }}</h6>
-      <img class="card-img-top" src="https://picsum.photos/200/300">
+      <img class="card-img-top" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwb2JqZWN0c3xlbnwwfHwwfHw%3D&w=1000&q=80">
       <p v-html="article.text"></p>
       <a href="#" class="card-link">Card link</a>
       <a href="#" class="card-link">Another link</a>
@@ -80,8 +80,8 @@ export default {
   methods: {
     async getData() {
       return {
-        image: 'https://picsum.photos/seed/picsum/360/240',
-        title: 'Článek o ničem',
+        image: 'https://picsum.photos/200/300',
+        title: 'Článek o 💩',
         date: new Date(),
         text: `
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam egestas wisi a erat. Integer tempor. Pellentesque ipsum. Integer malesuada. Vestibulum fermentum tortor id mi. Aenean placerat. Pellentesque arcu. Phasellus rhoncus. In dapibus augue non sapien. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna.</p>
