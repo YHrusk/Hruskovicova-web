@@ -9,11 +9,12 @@
       <div class="collapse navbar-collapse position-absolute top-2 end-0 p-lg-1" id="navbarResponsive">
         <ul class="navbar-nav ms-auto py-4 py-lg-0">
           <li class="nav-item">
-            <router-link to="/about" class="btn btn-light offset-0">
+            <router-link to="/about" class="btn btn-light btn-outline-dark offset-0">
               About
             </router-link>
           </li>
-          <li><router-link to="/contact" class="btn btn-light offset-3">
+          <li>
+            <router-link to="/contact" class="btn btn-light btn-outline-dark offset-3">
             Contact
           </router-link>
           </li>

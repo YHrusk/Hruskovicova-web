@@ -2,9 +2,10 @@
 
 import Article from '@/components/Article.vue';
 import Preview from "@/components/Preview.vue";
+import NewArticle from "@/views/NewArticle.vue";
 
 export default {
-  components: {Preview, Article},
+  components: {NewArticle, Preview, Article},
   data() {
     return {
       articles: [
@@ -75,10 +76,17 @@ export default {
 </script>
 
 <template>
-  <div class="row">
-    <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2  pb-3 pt-3" v-for="article in articles">
-      <Preview :id="article.id" :title="article.title" :date="article.date" :text="article.text" :image="article.image"></Preview>
-    </div>
+  <div class="vertical-align: middle">
+    <div class="row offset-lg-1">
+     <div class="mt-4 offset-lg-2">
+        <router-link to="/newarticle" class="btn btn-light btn-outline-dark">
+          Nový článek
+        </router-link>
+     </div>
+     <div class="col-lg-6 col-md-8 offset-md-2 pb-3 pt-3" v-for="article in articles">
+        <Preview :id="article.id" :title="article.title" :date="article.date" :text="article.text" :image="article.image"></Preview>
+     </div>
+   </div>
   </div>
 </template>
 

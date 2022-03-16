@@ -5,7 +5,7 @@
       <div class="row">
         <div class="col-12 text-white text-xxl-center">
           <h1 class="content">Blogísek</h1>
-          <span class="subheading text-center">💩 💩 💩</span>
+          <span class="subheading text-center">🐷 💩 🐷</span>
         </div>
       </div>
     </div>
