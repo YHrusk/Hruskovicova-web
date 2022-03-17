@@ -2,7 +2,7 @@
 
 import Article from '@/components/Article.vue';
 import Preview from "@/components/Preview.vue";
-import NewArticle from "@/views/NewArticle.vue";
+import NewArticle from "@/views/NewArticleView.vue";
 
 export default {
   components: {NewArticle, Preview, Article},

@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import PageNotFound from '../views/PageNotFound.vue'
+import PageNotFound from '../views/PageNotFoundView.vue'
 import AboutView from "../views/AboutView.vue"
-import Contact from "../views/Contact.vue";
-import NewArticle from "../views/NewArticle.vue";
+import Contact from "../views/ContactView.vue";
+import NewArticle from "../views/NewArticleView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
