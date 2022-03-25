@@ -3,19 +3,19 @@
       <div class="row align-items-start">
         <div class="col">
           <h3 class="content"><b>Nový článek</b></h3>
-          <label>ID článku:</label>
+          <label class="form-label">ID článku:</label>
           <div class="md-form form-group purple-border">
             <textarea class="md-textarea form-control" rows="1" placeholder="ID"></textarea><br><br>
           </div>
-          <label>Název článku:</label>
+          <label class="form-label">Název článku:</label>
           <div class="md-form form-group purple-border">
-            <textarea class="md-textarea form-control" rows="1" placeholder="Název"></textarea><br><br>
+            <textarea v-model="article.title" class="md-textarea form-control" rows="1" placeholder="Název"></textarea><br><br>
           </div>
-          <label>Článek:</label>
+          <label class="form-label">Text článku:</label>
           <div class="md-form mb-4 form-group purple-border">
-            <textarea class="md-textarea form-control" rows="3" placeholder="Něco sem napiš..."></textarea>
+            <textarea v-model="article.text" class="md-textarea form-control" rows="3" placeholder="Něco sem napiš..."></textarea>
           </div>
-          <label>Obrázek:</label>
+          <label class="form-label">Obrázek:</label>
           <div>
             <input @change="onImage" class="form-control" type="file" id="file">
           </div>
@@ -23,7 +23,6 @@
       </div>
       <input type="submit" value="Odeslat" class="mt-4">
     </div>
-
 </template>
 
 <script>
